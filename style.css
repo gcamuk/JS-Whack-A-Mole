@@ -1,0 +1,65 @@
+html {
+    background-color: whitesmoke;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* align-content: center; BUTTON */
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.game {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.mrbump {
+    background: url("assets/mrbump.png") bottom center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    /* transition: all 0.4s; */
+}
+
+.field {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.field:after {
+    display: block;
+    background: url("assets/field.png") bottom center no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#button {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
